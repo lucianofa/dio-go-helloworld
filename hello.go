@@ -1,5 +1,6 @@
 package main
 import "fmt"
 func main() {
-        fmt.Printf("hello, word\n")
+    fmt.Println("Wlelcom to")
+    fmt.Print("this")
 }

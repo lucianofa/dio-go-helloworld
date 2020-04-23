@@ -1,0 +1,344 @@
+AMD Radeon HD 7400M Series
+
+C:\Users\Luciano\prg\dio-go-helloworld>copy con hello.go
+package main
+import "fmt"
+func main() {
+        fmt.Printf("hello, word\n")
+}
+
+C:\Users\Luciano\prg\dio-go-helloworld>go build hello.go
+
+C:\Users\Luciano\prg\dio-go-helloworld>dir
+ O volume na unidade C é SSD-480GB-MSI
+ O Número de Série do Volume é 22EC-EF64
+
+ Pasta de C:\Users\Luciano\prg\dio-go-helloworld
+
+21/04/2020  14:52    <DIR>          .
+21/04/2020  14:52    <DIR>          ..
+21/04/2020  14:52         2.159.616 hello.exe
+21/04/2020  14:52                83 hello.go
+               2 arquivo(s)      2.159.699 bytes
+               2 pasta(s)   16.285.835.264 bytes disponíveis
+
+C:\Users\Luciano\prg\dio-go-helloworld>hello
+hello, word
+
+C:\Users\Luciano\prg\dio-go-helloworld>git init
+Initialized empty Git repository in C:/Users/Luciano/prg/dio-go-helloworld/.git/
+
+C:\Users\Luciano\prg\dio-go-helloworld>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.exe
+        hello.go
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Luciano\prg\dio-go-helloworld>git add .
+
+C:\Users\Luciano\prg\dio-go-helloworld>git commit -m "criando hello world"
+[master (root-commit) b079e33] criando hello world
+ 2 files changed, 5 insertions(+)
+ create mode 100644 hello.exe
+ create mode 100644 hello.go
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote add master package main
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>
+C:\Users\Luciano\prg\dio-go-helloworld>import "fmt"
+'import' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Luciano\prg\dio-go-helloworld>
+C:\Users\Luciano\prg\dio-go-helloworld>func main() {
+'func' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Luciano\prg\dio-go-helloworld>fmt.Printf("hello, world\n")
+'fmt.Printf' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote add master package main
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote add master https://github.com/lucianofa/dio-go-helloworld.git
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote add origin master https://github.com/lucianofa/dio-go-helloworld.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote add origin --master https://github.com/lucianofa/dio-go-helloworld.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote add origin https://github.com/lucianofa/dio-go-helloworld.git
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push --set-upstream origin master
+To https://github.com/lucianofa/dio-go-helloworld.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/lucianofa/dio-go-helloworld.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 622 bytes | 56.00 KiB/s, done.
+From https://github.com/lucianofa/dio-go-helloworld
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull origin master
+From https://github.com/lucianofa/dio-go-helloworld
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Luciano\prg\dio-go-helloworld>dir
+ O volume na unidade C é SSD-480GB-MSI
+ O Número de Série do Volume é 22EC-EF64
+
+ Pasta de C:\Users\Luciano\prg\dio-go-helloworld
+
+21/04/2020  14:54    <DIR>          .
+21/04/2020  14:54    <DIR>          ..
+21/04/2020  14:52         2.159.616 hello.exe
+21/04/2020  14:52                83 hello.go
+               2 arquivo(s)      2.159.699 bytes
+               2 pasta(s)   16.280.489.984 bytes disponíveis
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Luciano\prg\dio-go-helloworld>push
+'push' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push --set-upstream origin master
+To https://github.com/lucianofa/dio-go-helloworld.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/lucianofa/dio-go-helloworld.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Luciano\prg\dio-go-helloworld>git remote
+master
+origin
+
+C:\Users\Luciano\prg\dio-go-helloworld>
+C:\Users\Luciano\prg\dio-go-helloworld>
+C:\Users\Luciano\prg\dio-go-helloworld>
+C:\Users\Luciano\prg\dio-go-helloworld>
+C:\Users\Luciano\prg\dio-go-helloworld>git brach -vv
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\Users\Luciano\prg\dio-go-helloworld>git branch -vv
+* master b079e33 criando hello world
+
+C:\Users\Luciano\prg\dio-go-helloworld>git fetch origin
+
+C:\Users\Luciano\prg\dio-go-helloworld>dir
+ O volume na unidade C é SSD-480GB-MSI
+ O Número de Série do Volume é 22EC-EF64
+
+ Pasta de C:\Users\Luciano\prg\dio-go-helloworld
+
+21/04/2020  14:54    <DIR>          .
+21/04/2020  14:54    <DIR>          ..
+21/04/2020  14:52         2.159.616 hello.exe
+21/04/2020  14:52                83 hello.go
+               2 arquivo(s)      2.159.699 bytes
+               2 pasta(s)   16.279.007.232 bytes disponíveis
+
+C:\Users\Luciano\prg\dio-go-helloworld>git fetch master
+From https://github.com/lucianofa/dio-go-helloworld
+ * [new branch]      master     -> master/master
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull origin master
+From https://github.com/lucianofa/dio-go-helloworld
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Luciano\prg\dio-go-helloworld>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Luciano\prg\dio-go-helloworld>git branch --set-upstream-to=origin/master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull origin master
+From https://github.com/lucianofa/dio-go-helloworld
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Luciano\prg\dio-go-helloworld>dir
+ O volume na unidade C é SSD-480GB-MSI
+ O Número de Série do Volume é 22EC-EF64
+
+ Pasta de C:\Users\Luciano\prg\dio-go-helloworld
+
+21/04/2020  14:54    <DIR>          .
+21/04/2020  14:54    <DIR>          ..
+21/04/2020  14:52         2.159.616 hello.exe
+21/04/2020  14:52                83 hello.go
+               2 arquivo(s)      2.159.699 bytes
+               2 pasta(s)   16.278.966.272 bytes disponíveis
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull
+fatal: refusing to merge unrelated histories
+
+C:\Users\Luciano\prg\dio-go-helloworld>git pull origin master --allow-unrelated-
+From https://github.com/lucianofa/dio-go-helloworld
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+C:\Users\Luciano\prg\dio-go-helloworld>dir
+ O volume na unidade C é SSD-480GB-MSI
+ O Número de Série do Volume é 22EC-EF64
+
+ Pasta de C:\Users\Luciano\prg\dio-go-helloworld
+
+21/04/2020  15:15    <DIR>          .
+21/04/2020  15:15    <DIR>          ..
+21/04/2020  14:52         2.159.616 hello.exe
+21/04/2020  14:52                83 hello.go
+21/04/2020  15:15                41 README.md
+               3 arquivo(s)      2.159.740 bytes
+               2 pasta(s)   16.277.377.024 bytes disponíveis
+
+C:\Users\Luciano\prg\dio-go-helloworld>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.08 MiB | 1.20 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/lucianofa/dio-go-helloworld.git
+   435eef4..f79c9b5  master -> master
+
+

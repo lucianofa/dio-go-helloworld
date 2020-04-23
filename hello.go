@@ -1,6 +1,10 @@
-package main
-import "fmt"
+package main //definição que esse é meu programa (package) princial
+
+import "fmt" //importa o package (lib) fmt
+import "math/rand" //math é a pasta e rand é o pacote
+//função principal
 func main() {
-    fmt.Println("Wlelcom to")
-    fmt.Print("this")
+	fmt.Println("Welcome to")
+	fmt.Print("Go!")
 }
+
